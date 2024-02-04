@@ -1,3 +1,5 @@
+const imagemVisualizacao = document.getElementById('imagem-visualizacao')
+
 const verdeCipreste = {
     nome: 'Verde-Cipreste',
     pasta: 'imagens-verde-cipreste'
@@ -23,7 +25,22 @@ const rosaClaro = {
     pasta: 'imagens-rosa-claro'
 }
 
-const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro]
+const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro];
+const opcoesTamanho = ['41 mm', '45 mm']
 
+let imagemSelecionada = 1
+let tamanhoSelecionado = 1
+
+function trocarImagem() {
+    const idOpcaoSelecionada = document.querySelector('[name="opcao-imagem"]:checked').id
+    imagemSelecionada = idOpcaoSelecionada.charAt(0)
+    imagemVisualizacao.src = "./imagens/opcoes-cores/imagens-azul-inverno/imagem-' + imagemSelecionada + '.jpeg"
+}
+
+function trocasrTamanho() {
+    const idOpcaoSelecionada = document.querySelector('[name="opcao-tamanho"]:checked').id
+    tamanhoSelecionado = idOpcaoSelecionada.charAt(0)
+    
+}
 
 
