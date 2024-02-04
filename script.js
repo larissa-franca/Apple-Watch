@@ -1,4 +1,5 @@
 const imagemVisualizacao = document.getElementById('imagem-visualizacao')
+const tituloProduto = document.getElementById('titulo-produto')
 
 const verdeCipreste = {
     nome: 'Verde-Cipreste',
@@ -40,7 +41,8 @@ function trocarImagem() {
 function trocasrTamanho() {
     const idOpcaoSelecionada = document.querySelector('[name="opcao-tamanho"]:checked').id
     tamanhoSelecionado = idOpcaoSelecionada.charAt(0)
-    
+    tituloProduto.innerText = "Pulseira loop esportiva azul-inverno para caixa de " + opcoesTamanho[tamanhoSelecionado]
+
 }
 
 
