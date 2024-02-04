@@ -22,3 +22,8 @@ const rosaClaro = {
     nome: 'Rosa-Claro',
     pasta: 'imagens-rosa-claro'
 }
+
+const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro]
+
+
+
